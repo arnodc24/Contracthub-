@@ -1,0 +1,26 @@
+{
+  "name": "contracthub",
+  "version": "1.0.0",
+  "description": "Contracthub - Smart Contract Management System",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "npm run dev --prefix backend & npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "start": "npm start --prefix backend",
+    "server": "npm start --prefix backend",
+    "client": "npm run dev --prefix frontend"
+  },
+  "keywords": [
+    "contracthub",
+    "smart-contracts",
+    "management",
+    "web-app"
+  ],
+  "author": "",
+  "license": "MIT"
+}
